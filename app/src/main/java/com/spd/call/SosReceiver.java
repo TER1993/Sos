@@ -17,7 +17,7 @@ public class SosReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.d("sos", "receive sos");
-        String str = SystemProperties.get(SosConstants.SOS_PHONE, "10086");
+        String str = SystemProperties.get(SosConstants.SOS_PHONE, "10010");
         Intent intent2 = new Intent("android.intent.action.CALL");
         StringBuilder sb = new StringBuilder();
         sb.append("tel:");
